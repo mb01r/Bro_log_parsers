@@ -1,0 +1,8 @@
+(?P<time>^\d{10}\x2e\d{6})\x09
+(?P<uid>[a-zA-Z0-9]+)\x09
+(?P<id_orig_h>\d{1,3}\x2e\d+\x2e\d+\x2e\d+)\x09
+(?P<id_orig_p>\d+)\x09
+(?P<id_resp_h>\d+\x2e\d+\x2e\d+\x2e\d+)\x09
+(?P<id_resp_p>\d+)\x09
+(?P<func>[A-Z_]+|-)\x09
+(?P<exception>[A-Z_]+|-$)

@@ -1,0 +1,1 @@
+(?P<time>^\d{10}\x2e\d{6})\x09(?P<ts_delta>\d+\x2e\d+)\x09(?P<peer>\S+)\x09(?P<gaps>\d+)\x09(?P<acks>\d+)\x09(?P<percent_lost>\d+\x2e\d+$)

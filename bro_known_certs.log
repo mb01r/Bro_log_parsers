@@ -1,0 +1,14 @@
+ts
+host
+port_num
+subject
+issuer_subject
+serial
+
+
+(?P<time>^\d{10}\x2e\d{6})\x09
+(?P<host>\d{1,3}\x2e\d{1,3}\x2e\d{1,3}\x2e\d{1,3})\x09
+(?P<port_num>\d{1,5})\x09
+(?P<subject>\S+)\x09
+(?P<issuer_subject>[\S\x20]+)\x09
+(?P<serial>[0-9A-Z]+$)

@@ -1,0 +1,17 @@
+(?P<time>^\d{10}\x2e\d{6})\x09
+(?P<uid>\S+)\x09
+(?P<id_orig_h>\d{1,3}\x2e\d{1,3}\x2e\d{1,3}\x2e\d{1,3})\x09
+(?P<id_orig_p>\d{1,5})\x09
+(?P<id_resp_h>\d{1,3}\x2e\d{1,3}\x2e\d{1,3}\x2e\d{1,3})\x09
+(?P<id_resp_p>\d{1,5})\x09
+(?P<user>[A-Z]+)\x09
+(\S*)\x09(?P<command>[A-Z]+)\x09
+(?P<arg>\S+)\x09
+(?P<mime_type>\S+)\x09
+(?P<file_size>\S+)\x09
+(?P<reply_code>\d{3})\x09
+(?P<reply_msg>[\S\x20]+)\x09
+(?P<data_channel_passive>T|F|-)\x09
+(?P<data_channel_orig_h>\d{1,3}\x2e\d{1,3}\x2e\d{1,3}\x2e\d{1,3}|-)\x09
+(?P<data_channel_resp_host>\d{1,3}\x2e\d{1,3}\x2e\d{1,3}\x2e\d{1,3}|-)\x09
+(?P<data_channel_resp_p>\d{1,5}|-)\x09(?P<fuid>[a-zA-Z0-9]+|-)$

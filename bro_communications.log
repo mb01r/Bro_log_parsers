@@ -1,0 +1,8 @@
+(?P<time>^\d{10}\x2e\d{6})\x09
+(?P<peer>logger|manager|proxy-\d|worker-\d-\d)\x09
+(?P<src_name>parent|child)\x09
+(?P<connected_peer_desc>\S+)\x09
+(?P<connected_peer_addr>\S+)\x09
+(?P<connected_peer_port>\d{1,6}|-)\x09
+(?P<level>\S+)\x09
+(?P<message>(?:child|parent)\x20statistics\x3a\x20pending\x3d\d\x20bytes\x3d(OK|\d+K)\x2f\d+K\x20chunks\x3d\d+\x2f\d+\x20io\x3d\d+\x2f\d+\x20bytes\x2fio\x3d\d+\x2e\d+K\x2f\d+\x2e\d+K\x20events\x3d\d+\x2f\d+\x20operations\x3d\d+\x2f\d+$)

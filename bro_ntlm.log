@@ -1,0 +1,11 @@
+(?P<time>^\d{10}\x2e\d{6})\x09
+(?P<uid>[a-zA-Z0-9]+)\x09
+(?P<id_orig_h>\d+\x2e\d+\x2e\d+\x2e\d+)\x09
+(?P<id_orig_p>\d+)\x09
+(?P<id_resp_h>\d+\x2e\d+\x2e\d+\x2e\d+)\x09
+(?P<id_resp_p>\d+)\x09
+(?P<username>\S+)\x09
+(?P<hostname>\S+)\x09
+(?P<domainname>\S+)\x09
+(?P<success>T|F|-)\x09
+(?P<status>\S+$)
